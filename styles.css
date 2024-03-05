@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.container div {
+  font-size: 24px;
+  font-family: roboto;
+  /* border: solid #5b6dcd 1px; */
+}
+
+.left {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+}
+
+.logo,
+.sidebar div {
+  padding: 10px 0px;
+  padding-left: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 10px;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.side-content {
+  display: flex;
+  align-items: center;
+}
+
+.side-content img {
+  width: 30px;
+  padding-right: 10px;
+}
+
+.right {
+  display: grid;
+  grid-template-rows: 1fr 1fr 8fr;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr 3fr;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.search img {
+  width: 30px;
+}
+
+.searchbar {
+  background-color: rgba(217, 217, 217, 0.896);
+  width: 600px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 30px;
+}
+.notification {
+  justify-self: center;
+  align-self: center;
+}
+
+.notification img {
+  width: 30px;
+}
+
+.trend img,
+.avatar img {
+  object-fit: cover;
+  object-position: center center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.large-avatar,
+.avatar {
+  align-self: center;
+  justify-self: center;
+}
+
+.login-name {
+  align-self: center;
+}
+
+.login-name p {
+  font-size: 18px;
+}
+
+.large-avatar img {
+  object-fit: cover;
+  object-position: center center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.status-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.status-left {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.greeting {
+  align-self: center;
+}
+
+.greeting-top p {
+  font-size: 18px;
+}
+
+.greeting-bottom p {
+  font-size: 32px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.status-right {
+  align-self: center;
+  justify-self: center;
+}
+
+.action {
+  background-color: #04aa6d; /* Green */
+  border: none;
+  color: white;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  display: flex; /* Add this line */
+  align-items: center; /* Add this line */
+  justify-content: center; /* Add this line */
+  height: 40px;
+}
+
+.action p {
+  font-size: 18px;
+  padding: 12px 42px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: rgba(237, 237, 237, 0.964);
+}
+
+.dashboard-left {
+  align-content: start;
+}
+
+h5 {
+  color: rgb(49, 48, 48);
+}
+.cards {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  padding-top: 20px;
+}
+
+.card {
+  display: grid;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  border-left: 5px solid #5eead4;
+  box-shadow: 1px 2px 3px 4px rgba(106, 106, 106, 0.18);
+  gap: 10px;
+}
+
+.card p {
+  color: grey;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.title {
+  font-style: bold;
+}
+
+.icons {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.icons img {
+  width: 30px;
+}
+
+.dashboard-left,
+.dashboard-right {
+  display: grid;
+  padding: 10px;
+}
+
+.announcement {
+  display: grid;
+  align-self: flex-start;
+}
+
+.announcement-card {
+  margin-top: 20px;
+  display: grid;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 1px 2px 3px 4px rgba(61, 61, 61, 0.4);
+}
+
+.announcement-card p {
+  font-size: 12px;
+  color: grey;
+  padding-bottom: 10px;
+}
+
+.announce {
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+.announce h6 {
+  font-size: 16px;
+}
+
+.trending {
+  display: grid;
+  margin-top: 20px;
+}
+
+.trending-wrapper {
+  margin-top: 20px;
+  display: grid;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 1px 2px 3px 4px rgba(61, 61, 61, 0.4);
+  align-content: start;
+  gap: 10px;
+}
+
+.trend {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.trend-info {
+  align-self: center;
+}
+
+.trend-info p {
+  color: grey;
+  font-size: 16px;
+}
+
+.trend-account p {
+  color: black;
+}
